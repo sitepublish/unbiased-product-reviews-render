@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://unbiased-product-reviews-render.onrender.com/sitemap.xml
