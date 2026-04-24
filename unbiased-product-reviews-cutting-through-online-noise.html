@@ -1009,6 +1009,80 @@
 }
 </script>
   
+
+  <style id="cloud-stack-footer-normalizer">
+    .site-footer .footer-links,
+    .site-footer .footer-links-list,
+    .site-footer .footer-nav-links,
+    .c-footer .c-footer-list,
+    .site-footer .cloud-stack-resource-links,
+    .c-footer .cloud-stack-resource-links {
+      columns: unset !important;
+      column-count: 1 !important;
+      column-gap: 0 !important;
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: .55rem 1.25rem !important;
+      max-width: 100%;
+      list-style: none !important;
+      padding-left: 0 !important;
+      margin-left: 0 !important;
+    }
+    .site-footer .footer-links li,
+    .site-footer .footer-links-list li,
+    .site-footer .footer-nav-links li,
+    .c-footer .c-footer-list li,
+    .cloud-stack-resource-links li {
+      break-inside: avoid;
+      margin: 0 !important;
+      max-width: 100%;
+    }
+    .site-footer a,
+    .c-footer a {
+      color: rgba(255,255,255,.76) !important;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+      word-break: normal;
+      line-height: 1.65;
+    }
+    .site-footer a:hover,
+    .c-footer a:hover {
+      color: rgba(255,255,255,.98) !important;
+    }
+    .site-footer .footer-heading,
+    .site-footer .cloud-stack-resources-heading,
+    .c-footer .c-footer-heading,
+    .c-footer .cloud-stack-resources-heading {
+      color: rgba(255,255,255,.88) !important;
+    }
+    .site-footer .cloud-stack-resources,
+    .c-footer .cloud-stack-resources {
+      grid-column: 1 / -1;
+      width: 100%;
+      max-width: 100%;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,.12);
+    }
+    .site-footer .cloud-stack-resources-heading,
+    .c-footer .cloud-stack-resources-heading {
+      margin: 0 0 1rem;
+      font-size: .75rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      opacity: .9;
+    }
+    @media (max-width: 720px) {
+      .site-footer .footer-links,
+      .site-footer .footer-links-list,
+      .site-footer .footer-nav-links,
+      .c-footer .c-footer-list,
+      .site-footer .cloud-stack-resource-links,
+      .c-footer .cloud-stack-resource-links {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -1237,22 +1311,22 @@
       </div>
       
       <!-- cross-links-start -->
-        <div>
-          <div class="footer-heading" style="margin-top:1.5rem">Resources</div>
-          <ul class="footer-links" style="columns:3;column-gap:1.5rem;list-style:none;padding:0;margin:0">
-            <li><a href="https://unbiased-product-reviews.netlify.app/" title="unbiased product reviews Product Guide">unbiased product reviews Product Guide</a></li>
-            <li><a href="https://reviewstorage01.z5.web.core.windows.net/" title="unbiased product reviews Analysis">unbiased product reviews Analysis</a></li>
-            <li><a href="https://storage.googleapis.com/unbiased-product-reviews/" title="unbiased product reviews Review Hub">unbiased product reviews Review Hub</a></li>
-            <li><a href="http://unbiased-product-reviews.s3-website-us-east-1.amazonaws.com/" title="Reviews by unbiased product reviews">Reviews by unbiased product reviews</a></li>
-            <li><a href="https://unbiased-product-reviews-sitepublishs-projects.vercel.app" title="unbiased product reviews Comparisons">unbiased product reviews Comparisons</a></li>
-            <li><a href="https://unbiased-product-reviews-fe2c5d.gitlab.io/" title="unbiased product reviews Product Ratings">unbiased product reviews Product Ratings</a></li>
-            <li><a href="https://unbiased-product-reviews.pages.dev/" title="unbiased product reviews Buyer Guide">unbiased product reviews Buyer Guide</a></li>
-            <li><a href="https://unbiased-product-reviews.surge.sh" title="unbiased product reviews Product Reviews">unbiased product reviews Product Reviews</a></li>
-            <li><a href="https://drako003-unbiased-product-reviews.static.hf.space" title="unbiased product reviews Ratings">unbiased product reviews Ratings</a></li>
-            <li><a href="https://sitepublisher.codeberg.page/unbiased-product-reviews/" title="Visit unbiased product reviews">Visit unbiased product reviews</a></li>
-            <li><a href="https://sitepublisher.bitbucket.io/" title="unbiased product reviews Review Site">unbiased product reviews Review Site</a></li>
-            <li><a href="https://unbiased-product-reviews.web.app/" title="unbiased product reviews Reviews">unbiased product reviews Reviews</a></li>
-            <li><a href="https://pub-babf1d90d19b4595904475d8499c5b45.r2.dev/" title="unbiased product reviews Expert Reviews">unbiased product reviews Expert Reviews</a></li>
+        <div class="cloud-stack-resources">
+          <div class="cloud-stack-resources-heading">Resources</div>
+          <ul class="cloud-stack-resource-links">
+            <li><a href="https://unbiased-product-reviews.netlify.app/" title="unbiased product reviews Ratings" class="cloud-stack-resource-link">unbiased product reviews Ratings</a></li>
+            <li><a href="https://reviewstorage01.z5.web.core.windows.net/tiered-unbiased-product-reviews-20260309-221311-supporting/" title="unbiased product reviews Buyer Guide" class="cloud-stack-resource-link">unbiased product reviews Buyer Guide</a></li>
+            <li><a href="https://storage.googleapis.com/unbiased-product-reviews/index.html" title="unbiased product reviews Analysis" class="cloud-stack-resource-link">unbiased product reviews Analysis</a></li>
+            <li><a href="http://unbiased-product-reviews.s3-website-us-east-1.amazonaws.com/" title="unbiased product reviews Tested Products" class="cloud-stack-resource-link">unbiased product reviews Tested Products</a></li>
+            <li><a href="https://unbiased-product-reviews-sitepublishs-projects.vercel.app" title="unbiased product reviews Review Site" class="cloud-stack-resource-link">unbiased product reviews Review Site</a></li>
+            <li><a href="https://unbiased-product-reviews-fe2c5d.gitlab.io/" title="unbiased product reviews Reviews" class="cloud-stack-resource-link">unbiased product reviews Reviews</a></li>
+            <li><a href="https://unbiased-product-reviews.pages.dev/" title="unbiased product reviews Consumer Guide" class="cloud-stack-resource-link">unbiased product reviews Consumer Guide</a></li>
+            <li><a href="https://unbiased-product-reviews.surge.sh" title="unbiased product reviews Review Hub" class="cloud-stack-resource-link">unbiased product reviews Review Hub</a></li>
+            <li><a href="https://drako003-unbiased-product-reviews.static.hf.space" title="unbiased product reviews" class="cloud-stack-resource-link">unbiased product reviews</a></li>
+            <li><a href="https://sitepublisher.codeberg.page/unbiased-product-reviews/" title="Reviews by unbiased product reviews" class="cloud-stack-resource-link">Reviews by unbiased product reviews</a></li>
+            <li><a href="https://sitepublisher.bitbucket.io/" title="unbiased product reviews Product Testing" class="cloud-stack-resource-link">unbiased product reviews Product Testing</a></li>
+            <li><a href="https://unbiased-product-reviews.web.app/" title="unbiased product reviews Expert Reviews" class="cloud-stack-resource-link">unbiased product reviews Expert Reviews</a></li>
+            <li><a href="https://pub-babf1d90d19b4595904475d8499c5b45.r2.dev/index.html" title="Visit unbiased product reviews" class="cloud-stack-resource-link">Visit unbiased product reviews</a></li>
           </ul>
         </div>
         <!-- cross-links-end -->
